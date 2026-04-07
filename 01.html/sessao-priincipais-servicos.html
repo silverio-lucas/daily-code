@@ -1,0 +1,390 @@
+<style>
+    /* CSS Personalizado com Prefixo pm-sdp- */
+    :root {
+        --pm-sdp-green-dark: #014619;
+        --pm-sdp-gray-dark: #323232;
+        --pm-sdp-green-bg: #f0f9f4;
+        --pm-sdp-green-border: #e2f2e9;
+    }
+
+    .pm-sdp-wrapper {
+        padding: 40px 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .pm-sdp-main-title {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--pm-sdp-gray-dark);
+        margin-bottom: 40px;
+        padding-left: 15px;
+    }
+
+    /* Estilização do Link (Botão) */
+    .pm-sdp-btn-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--pm-sdp-green-bg);
+        border: 1px solid var(--pm-sdp-green-border);
+        border-radius: 18px;
+        padding: 20px 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-decoration: none !important;
+        transition: all 0.3s ease-in-out;
+        height: 165px;
+    }
+
+    .pm-sdp-btn-link:hover, 
+    .pm-sdp-btn-link:focus {
+        background-color: #e6f4ed;
+        border-color: #cbd5e1;
+        transform: translateY(-4px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    }
+
+    .pm-sdp-icon-container {
+        margin-bottom: 12px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pm-sdp-icon-img {
+        max-height: 100%;
+        max-width: 50px;
+        width: auto;
+        display: block;
+    }
+
+    /* Hierarquia de Cores no Texto */
+    .pm-sdp-service-label {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    /* Linha de cima: Cinza */
+    .pm-sdp-line-top {
+        color: var(--pm-sdp-gray-dark);
+        display: block;
+    }
+
+    /* Linha de baixo: Verde */
+    .pm-sdp-line-bottom {
+        color: var(--pm-sdp-green-dark);
+        display: block;
+    }
+
+    /* Linha única: Verde */
+    .pm-sdp-single-line {
+        color: var(--pm-sdp-green-dark);
+    }
+
+    @media (max-width: 767px) {
+        .pm-sdp-btn-link {
+            height: 145px;
+            padding: 15px 5px;
+        }
+        .pm-sdp-service-label {
+            font-size: 12px;
+        }
+    }
+</style>
+
+<div class="pm-sdp-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="pm-sdp-main-title">Principais Serviços</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Linha 1 -->
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/portal-transparencia.png" alt="Portal" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Portal da</span>
+                        <span class="pm-sdp-line-bottom">Transparência</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/diario-oficial.png" alt="Diário" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Diário</span>
+                        <span class="pm-sdp-line-bottom">Oficial</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/licitacao.png" alt="Licitação" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label pm-sdp-single-line">Licitação</p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/ouvidoria.png" alt="Ouvidoria" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label pm-sdp-single-line">Ouvidoria</p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/informacao-cidadao.png" alt="SIC" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Serviço de Informação</span>
+                        <span class="pm-sdp-line-bottom">ao Cidadão</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/carta-servicos.png" alt="Carta" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Carta de Serviços</span>
+                        <span class="pm-sdp-line-bottom">ao Usuário</span>
+                    </p>
+                </a>
+            </div>
+
+            <!-- Linha 2 -->
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/legislacao.png" alt="Legislação" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Legislação</span>
+                        <span class="pm-sdp-line-bottom">Municipal</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/nfe-antigo.png" alt="NF-e Antigo" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">NF-e</span>
+                        <span class="pm-sdp-line-bottom">Portal Antigo</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/nfe-novo.png" alt="NF-e Novo" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">NF-e</span>
+                        <span class="pm-sdp-line-bottom">Novo Portal</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/alvara.png" alt="Alvará" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Emitir</span>
+                        <span class="pm-sdp-line-bottom">Alvará</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/iptu.png" alt="IPTU" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label pm-sdp-single-line">IPTU</p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/certidao-negativa.png" alt="Certidão" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Emitir Certidão</span>
+                        <span class="pm-sdp-line-bottom">Negativa</span>
+                    </p>
+                </a>
+            </div>
+
+            <!-- Linha 3 -->
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/fiscal.png" alt="Fiscal" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Responsabilidade</span>
+                        <span class="pm-sdp-line-bottom">Fiscal</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/emendas.png" alt="Emendas" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Emendas</span>
+                        <span class="pm-sdp-line-bottom">Parlamentares</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/servidor.png" alt="Servidor" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Portal</span>
+                        <span class="pm-sdp-line-bottom">do Servidor</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/assinador.png" alt="Assinador" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Assinador</span>
+                        <span class="pm-sdp-line-bottom">Digital</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/faq.png" alt="FAQ" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Perguntas</span>
+                        <span class="pm-sdp-line-bottom">Frequentes (FAQ)</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/obras.png" alt="Obras" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label pm-sdp-single-line">Obras</p>
+                </a>
+            </div>
+
+            <!-- Linha 4 -->
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/parcerias.png" alt="OSC" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Parcerias</span>
+                        <span class="pm-sdp-line-bottom">OSC</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/conselhos.png" alt="Conselhos" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Conselhos</span>
+                        <span class="pm-sdp-line-bottom">Municipais</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/protocolo.png" alt="Protocolo" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Protocolo</span>
+                        <span class="pm-sdp-line-bottom">Virtual</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/multas.png" alt="Multas" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Consulta de</span>
+                        <span class="pm-sdp-line-bottom">Multa de Trânsito</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/identidade.png" alt="Identidade" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Emissão de Carteira</span>
+                        <span class="pm-sdp-line-bottom">de Identidade</span>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <a href="#" class="pm-sdp-btn-link">
+                    <div class="pm-sdp-icon-container">
+                        <img src="../css/images/todos-servicos.png" alt="Todos" class="pm-sdp-icon-img">
+                    </div>
+                    <p class="pm-sdp-service-label">
+                        <span class="pm-sdp-line-top">Todos os</span>
+                        <span class="pm-sdp-line-bottom">Serviços</span>
+                    </p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
